@@ -1,0 +1,47 @@
+.input {
+  
+}
+
+.input label {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.input input {
+  padding: 0.5rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.input input:active,
+.input input:focus {
+  outline: none;
+  box-shadow: 0 0 1.25px 1.25px rgba(0, 0, 0, 0.8);
+}
+
+@media(max-width: 720px) {
+  .input {
+    width: fit-content;
+  }
+  .input input {
+    width: 12rem;
+    margin-left: calc(50% - 6rem);
+  }
+}
+
+@media(max-width: 500px) {
+  .input input {
+    width: 8rem;
+    margin-left: calc(50% - 4rem);
+  }
+}
+
+@media(max-width: 300px) {
+  .input input {
+    width: 6rem;
+    margin-left: calc(50% - 3rem);
+  }
+}

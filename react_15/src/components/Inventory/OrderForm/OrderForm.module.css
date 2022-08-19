@@ -1,0 +1,48 @@
+.form {
+  margin-top: 4rem;
+  width: 40rem;
+  max-width: 40rem;
+  max-height: 20rem;
+  margin: 4rem auto;
+  padding: 2rem;
+  box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+  overflow-y: scroll;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions button {
+  margin: 0 0.5rem;
+}
+
+@media(max-width: 720px) {
+  .form {
+    width: auto;
+    max-width: auto;
+    width: auto;
+  }
+  .group {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .actions {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .actions button {
+    margin: 0.5rem 0;
+  }
+}

@@ -1,0 +1,74 @@
+.item {
+  margin: 1rem 0;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.item h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.item header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.count span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.price-total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(64, 128, 64, 0.8);
+}
+
+.price-item {
+  font-weight: normal;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.5rem 0;
+}
+
+.actions button {
+  box-shadow: 0 0 1px 1px white;
+  margin-left: 0.5rem;
+  padding: 0.15rem 1rem;
+}
+
+@media(max-width: 720px) {
+  .item header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .details {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .actions {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

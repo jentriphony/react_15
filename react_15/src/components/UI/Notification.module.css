@@ -1,0 +1,76 @@
+.notification {
+  width: 100%;
+  height: 4rem;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 10%;
+  align-items: center;
+  color: black;
+}
+
+.notification h2,
+.notification p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.loading {
+  box-shadow: 0 0 2px 2px rgba(128, 128, 128, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.error {
+  box-shadow: 0 0 2px 2px rgba(255, 64, 64, 0.4);
+  background-color: rgba(255, 64, 64, 0.4);
+}
+
+.success {
+  box-shadow: 0 0 2px 2px rgba(64, 255, 64, 0.4);
+  background-color: rgba(64, 255, 64, 0.4);
+}
+
+.spinner {
+  right: 2rem;
+  margin-bottom: 1rem;
+  padding: 0 0.25rem;
+  position: absolute;
+  box-shadow: none;
+  text-align: center;
+}
+
+.close-button {
+  right: 2rem;
+  margin-bottom: 1rem;
+  padding: 0 0.25rem;
+  position: absolute;
+  box-shadow: none;
+  border: 1px solid white;
+  background: black;
+  text-align: center;
+  color: white;
+}
+
+.close-button:hover,
+.close-button:active {
+  box-shadow: none;
+  border: none;
+  background: white;
+  color: black;
+}
+
+@media(max-width: 720px) {
+  .notification {
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
+  .success,
+  .error
+  .loading,
+  .notification h2,
+  .notification p {
+    margin: 0.25rem;
+  }
+}
